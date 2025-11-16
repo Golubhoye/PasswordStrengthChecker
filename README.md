@@ -19,6 +19,24 @@ This is a plain HTML/CSS/JavaScript project — no installation or Node.js requi
 3. The app runs locally in the browser. Use the input to test password strength, click **Generate** to generate a strong password, or **Copy** to copy it to clipboard.
 
 ---
+### Using Live Server (Optional)
+
+To make development easier, you can run this project using the Live Server extension in Visual Studio Code.
+
+#### Installation:
+1. Open VS Code.
+2. Go to Extensions (Ctrl + Shift + X).
+3. Search for "Live Server".
+4. Install the extension by Ritwick Dey.
+
+#### Running the Project:
+1. Open the project folder in VS Code.
+2. Right-click index.html.
+3. Select "Open with Live Server".
+
+Your website will open in the browser and update automatically on file save.
+
+This extension is optional but useful for testing and debugging.
 
 ## Files included
 - `index.html` — main webpage  
