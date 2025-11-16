@@ -24,7 +24,6 @@ This is a plain HTML/CSS/JavaScript project — no installation or Node.js requi
 - `index.html` — main webpage  
 - `style.css` — styling  
 - `script.js` — password logic and UI behavior  
-- `manual.pdf` — project manual for submission (teacher instructions, screenshots, viva points)  
 - `screenshots/` — example output images
 ---
 
