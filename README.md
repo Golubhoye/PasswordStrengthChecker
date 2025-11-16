@@ -1,6 +1,7 @@
 # Password Strength Checker
 
-**Description**  
+**Description** 
+
 A simple client-side Password Strength Checker designed for the Software Development Security (SDS) mini-project. The tool checks password length, presence of uppercase/lowercase letters, numbers, symbols, detects common patterns, and shows a strength meter. Includes generate/copy/show features and an informational slider with tips and warnings.
 
 ---
