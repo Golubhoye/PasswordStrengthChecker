@@ -26,16 +26,6 @@ This is a plain HTML/CSS/JavaScript project — no installation or Node.js requi
 - `script.js` — password logic and UI behavior  
 - `manual.pdf` — project manual for submission (teacher instructions, screenshots, viva points)  
 - `screenshots/` — example output images
-
----
-
-## Teacher Instructions (Submission checklist)
-1. The project is available in this public GitHub repository:  
-   `https://github.com/your-username/PasswordStrengthChecker`  
-2. The repository contains all necessary files (code, manual, screenshots).  
-3. Manual includes: project title, description, installation steps, how to run, screenshots, viva Q&A.  
-4. To run the project: open `index.html` in a browser (no setup required).
-
 ---
 
 ## License
