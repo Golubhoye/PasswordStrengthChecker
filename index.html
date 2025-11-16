@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Password Strength Checker — SDS Mini Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="card" id="card">
+      <h1>Password Strength Checker</h1>
+      <p class="subtitle">Interactive, client-side demo for SDS Mini-Project.</p>
+
+      <div class="field-row">
+        <div class="input-wrap">
+          <input id="password" type="password" placeholder="Enter password" oninput="updateAll()" autocomplete="new-password" />
+          <button id="toggleBtn" class="btn small" onclick="toggleShow()">Show</button>
+        </div>
+        <div class="small-controls">
+          <input id="genLen" type="number" min="8" max="32" value="12" title="Generated password length" />
+          <button class="btn" onclick="generatePassword()">Generate</button>
+          <button class="btn" onclick="copyPassword()">Copy</button>
+        </div>
+      </div>
+
+      <div class="meter-wrap">
+        <div id="strengthBar" class="meter"></div>
+      </div>
+
+      <div class="status-row">
+        <div id="strengthLabel" class="strength-label">Strength: —</div>
+        <div id="charCount" class="char-count">Chars: 0</div>
+      </div>
+
+      <div class="checks">
+        <ul>
+          <li id="c-length" class="fail">Min 8 chars</li>
+          <li id="c-upper" class="fail">Uppercase letter (A–Z)</li>
+          <li id="c-lower" class="fail">Lowercase letter (a–z)</li>
+          <li id="c-number" class="fail">Number (0–9)</li>
+          <li id="c-symbol" class="fail">Symbol (!@#$&*)</li>
+          <li id="c-pattern" class="fail">No common patterns / repeats</li>
+        </ul>
+      </div>
+
+      <div class="tips-row">
+        <button class="btn ghost" onclick="showTips()">Security Tips</button>
+      </div>
+
+      <!-- NEW: Slider section -->
+      <div class="slider-wrap" id="sliderWrap" onmouseenter="pauseSlider()" onmouseleave="startSlider()">
+        <div class="slider-header">
+          <strong>If you use a weak password...</strong>
+          <div class="slider-controls">
+            <button class="small-arrow" onclick="prevSlide()">‹</button>
+            <button class="small-arrow" onclick="nextSlide()">›</button>
+          </div>
+        </div>
+        <div id="slider" class="slider">
+          <!-- slides inserted by script -->
+        </div>
+        <div id="sliderDots" class="slider-dots"></div>
+      </div>
+
+      <div class="footer-note">Note: This tool is client-side only. Do NOT paste real/sensitive passwords.</div>
+
+    </div>
+  </div>
+
+  <!-- Tips modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Password Safety Tips</h3>
+      <ul>
+        <li>Use a long passphrase (≥12 chars) with mixed types.</li>
+        <li>Avoid personal info (names, dates) and common words.</li>
+        <li>Do not reuse passwords across sites.</li>
+        <li>Use a trusted password manager to store unique passwords.</li>
+        <li>Prefer passphrases (three or four random words) over single words.</li>
+      </ul>
+      <div class="modal-actions">
+        <button class="btn" onclick="closeTips()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
